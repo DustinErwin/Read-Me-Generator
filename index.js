@@ -49,7 +49,7 @@ inquirer
   .then((response) => {
     let readMeTemplate = `
 <h1 align="center">${response.title}</h1>
-![GitHub followers](https://img.shields.io/github/followers/${response.github}.svg?style=social&label=Follow&maxAge=2592000)(https://github.com/${response.github}?tab=followers)
+
 ![badge](https://img.shields.io/badge/license-${response.license}-blue)<br />
 ## Description
 ${response.description}
