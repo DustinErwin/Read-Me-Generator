@@ -20,20 +20,20 @@ inquirer
     },
     {
       type: "input",
-      message: "Describe the purpose of your project:",
-      name: "purpose",
-    },
-    {
-      type: "input",
       message:
         'Who contributed to this project? (Seperate multiple names with "-"):',
       name: "contributors",
     },
     {
+      type: "input",
+      message: "What tests are available if any?:",
+      name: "tests",
+    },
+    {
       type: "checkbox",
       message: "Which license will be used?:",
-      name: "licenses",
-      choices: ["BSD", "MIT", "GPL"],
+      name: "license",
+      choices: ["BSD", "MIT", "MPL"],
     },
     {
       type: "input",
@@ -47,5 +47,34 @@ inquirer
     },
   ])
   .then((response) => {
-    console.log(response);
+    let readMeTemplate = `
+<h1 align="center">${response.projectTitle}</h1>
+  
+![badge](https://img.shields.io/badge/license-${response.license}-brightgreen)<br />
+## Description
+${response.description}
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [License](#license)
+- [Contributors](#contributors)
+- [Tests](#tests)
+- [Questions?](#questions)
+## Installation
+ ${response.installation}
+## License
+![badge](https://img.shields.io/badge/license-${response.license}-brightgreen)
+<br />
+This application is covered by the ${response.license} license. 
+## Contributing
+${response.contributors}
+## Tests
+${response.tests}
+## Questions
+<br />
+:octocat: GitHub: [${response.username}](https://github.com/${response.username})<br />
+<br />
+✉Email: ${response.email}
+    `;
+    fs.writeFile("README.md", readMeTemplate, "", (e) => console.log(e));
   });
