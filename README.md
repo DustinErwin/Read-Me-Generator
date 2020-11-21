@@ -1,9 +1,9 @@
 
-<h1 align="center">undefined</h1>
-  
-![badge](https://img.shields.io/badge/license--brightgreen)<br />
+<h1 align="center">Read Me Generator</h1>
+[![GitHub followers](https://img.shields.io/github/followers/DustinErwin.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/DustinErwin?tab=followers)
+![badge](https://img.shields.io/badge/license-MIT-blue)<br />
 ## Description
-sweet
+This is a programmed README.md file generator to automate the creation of such a file for increased efficiency.
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -12,18 +12,18 @@ sweet
 - [Tests](#tests)
 - [Questions?](#questions)
 ## Installation
- fast
+ npm init
 ## License
-![badge](https://img.shields.io/badge/license--brightgreen)
+![badge](https://img.shields.io/badge/license-MIT-blue)
 <br />
-This application is covered by the  license. 
+This application is covered by the MIT license. 
 ## Contributing
-Me duh
+Dustin Erwin
 ## Tests
-ummm...
+none
 ## Questions
 <br />
-:octocat: GitHub: [undefined](https://github.com/undefined)<br />
+:octocat: GitHub: [DustinErwin](https://github.com/DustinErwin)<br />
 <br />
-✉Email: barf
+✉Email: derwin499@gmail.com
     
