@@ -48,7 +48,7 @@ inquirer
   ])
   .then((response) => {
     let readMeTemplate = `
-<h1 align="center">${response.projectTitle}</h1>
+<h1 align="center">${response.title}</h1>
   
 ![badge](https://img.shields.io/badge/license-${response.license}-brightgreen)<br />
 ## Description
@@ -72,7 +72,7 @@ ${response.contributors}
 ${response.tests}
 ## Questions
 <br />
-:octocat: GitHub: [${response.username}](https://github.com/${response.username})<br />
+:octocat: GitHub: [${response.github}](https://github.com/${response.github})<br />
 <br />
 ✉Email: ${response.email}
     `;
