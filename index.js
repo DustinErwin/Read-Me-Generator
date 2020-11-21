@@ -30,7 +30,7 @@ inquirer
       name: "tests",
     },
     {
-      type: "checkbox",
+      type: "list",
       message: "Which license will be used?:",
       name: "license",
       choices: ["BSD", "MIT", "MPL"],
@@ -49,7 +49,7 @@ inquirer
   .then((response) => {
     let readMeTemplate = `
 <h1 align="center">${response.title}</h1>
-[![GitHub followers](https://img.shields.io/github/followers/${response.github}.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/${response.github}?tab=followers)
+![GitHub followers](https://img.shields.io/github/followers/${response.github}.svg?style=social&label=Follow&maxAge=2592000)(https://github.com/${response.github}?tab=followers)
 ![badge](https://img.shields.io/badge/license-${response.license}-blue)<br />
 ## Description
 ${response.description}
@@ -65,8 +65,8 @@ ${response.description}
 ## License
 ![badge](https://img.shields.io/badge/license-${response.license}-blue)
 <br />
-This application is covered by the ${response.license} license. 
-## Contributing
+This application is protected under the ${response.license} license. 
+## Contributors
 ${response.contributors}
 ## Tests
 ${response.tests}
