@@ -49,7 +49,6 @@ inquirer
   .then((response) => {
     let readMeTemplate = `
 <h1 align="center">${response.title}</h1>
-
 ![badge](https://img.shields.io/badge/license-${response.license}-blue)<br />
 ## Description
 ${response.description}
