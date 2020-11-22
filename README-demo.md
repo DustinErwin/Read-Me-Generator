@@ -18,8 +18,6 @@ A Readme File Generator
 ## Installation
 
 Watch the video!
-![ReadmeGen](https://user-images.githubusercontent.com/70966543/99893284-081a2580-2c4c-11eb-9da9-a5ebe163134a.gif)
-
 https://drive.google.com/file/d/1wCqPLPJlgX6ekM2f6VQyB09LxaGTn6jo/view
 
 ## License
