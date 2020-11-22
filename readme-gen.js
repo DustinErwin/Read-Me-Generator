@@ -49,9 +49,12 @@ inquirer
   .then((response) => {
     let readMeTemplate = `
 <h1 align="center">${response.title}</h1>
+
 ![badge](https://img.shields.io/badge/license-${response.license}-blue)<br />
+
 ## Description
 ${response.description}
+
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -59,16 +62,21 @@ ${response.description}
 - [Contributors](#contributors)
 - [Tests](#tests)
 - [Questions?](#questions)
+
 ## Installation
  ${response.installation}
+
 ## License
 ![badge](https://img.shields.io/badge/license-${response.license}-blue)
 <br />
-This application is protected under the ${response.license} license. 
+This application is protected under the ${response.license} license.
+
 ## Contributors
 ${response.contributors}
+
 ## Tests
 ${response.tests}
+
 ## Questions
 <br />
 :octocat: GitHub: [${response.github}](https://github.com/${response.github})<br />
