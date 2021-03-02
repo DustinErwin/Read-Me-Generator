@@ -22,7 +22,7 @@ A Readme File Generator for your GitHub repositories. Check out the video below 
 
 ![Watch the video!](https://user-images.githubusercontent.com/70966543/99893284-081a2580-2c4c-11eb-9da9-a5ebe163134a.gif)
 
-![Watch the installation video here!](https://drive.google.com/file/d/1wCqPLPJlgX6ekM2f6VQyB09LxaGTn6jo/view)
+[Watch the installation video here!](https://drive.google.com/file/d/1wCqPLPJlgX6ekM2f6VQyB09LxaGTn6jo/view)
 
 ## License
 
